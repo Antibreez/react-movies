@@ -21,7 +21,7 @@ class App extends Component {
     this.props.setMovies([]);
     this.state.startScreen && this.setState({startScreen: false});
 
-    fetch(`http://www.omdbapi.com/?s=${value}&apikey=8f5ef419`)
+    fetch(`https://www.omdbapi.com/?s=${value}&apikey=8f5ef419`)
       .then(response => response.json())
       .then(data => {
         this.props.setCurrentPage(1)
@@ -46,7 +46,7 @@ class App extends Component {
   changePage = (page) => {
     this.props.setMovies([]);
 
-    fetch(`http://www.omdbapi.com/?s=${this.state.search}&page=${page}&apikey=8f5ef419`)
+    fetch(`https://www.omdbapi.com/?s=${this.state.search}&page=${page}&apikey=8f5ef419`)
       .then(response => response.json())
       .then(data => {
 
@@ -62,7 +62,7 @@ class App extends Component {
 
     const filterParam = filter === 'all' ? '' : filter;
 
-    fetch(`http://www.omdbapi.com/?s=${this.state.search}&type=${filterParam}&apikey=8f5ef419`)
+    fetch(`https://www.omdbapi.com/?s=${this.state.search}&type=${filterParam}&apikey=8f5ef419`)
       .then(response => response.json())
       .then(data => {
         this.props.setCurrentPage(1)

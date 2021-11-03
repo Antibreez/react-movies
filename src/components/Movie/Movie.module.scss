@@ -1,0 +1,10 @@
+.movie {
+  margin: 10px;
+  width: calc((100% - 60px) / 3);
+}
+
+@media(max-width: 899px) {
+  .movie {
+    width: 100%;
+  }
+}

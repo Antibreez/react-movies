@@ -1,0 +1,13 @@
+.filters {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  p {
+    margin-bottom: 15px;
+    
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}

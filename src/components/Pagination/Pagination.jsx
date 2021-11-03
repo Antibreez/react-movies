@@ -93,7 +93,7 @@ class Pagination extends Component {
 
         {
           pages > 1
-            ? <li className={cl({"disabled": currentPage === 1})}>
+            ? <li className={cl({"disabled": currentPage === 1}, s.paginationPrev)}>
                 <a href="#!" onClick={this.onPrevHandle}>
                   <i className="material-icons">chevron_left</i>
                 </a>
@@ -140,7 +140,7 @@ class Pagination extends Component {
 
         {
           pages > 1
-            ? <li className={cl({"disabled": currentPage === pages})}>
+            ? <li className={cl({"disabled": currentPage === pages}, s.paginationNext)}>
                 <a href="#!" onClick={this.onNextHandle}>
                   <i className="material-icons">chevron_right</i>
                 </a>

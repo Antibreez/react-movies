@@ -27,3 +27,27 @@ main {
   padding: 20px 0;
   flex-grow: 1;
 }
+
+.brand-logo {
+  white-space: nowrap;
+}
+
+.page-footer__github-link {
+  img {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.page-header__github-link {
+  img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
